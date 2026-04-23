@@ -611,6 +611,7 @@ export default function App() {
 
         {/* Viewfinder */}
         <div style={b(7)}>
+          <div style={{ textAlign: 'center', fontFamily: FONT, fontSize: 8, letterSpacing: '0.16em', color: 'rgba(255,255,255,0.28)', textTransform: 'uppercase', paddingBottom: 2 }}>collaboration project of @grepxz and @gruku</div>
           <MemoSceneRing scenes={SCENES} activeIdx={sceneIdx} onChange={setSceneIdx} height={30} /><Sep />
           <MemoModeSwitches mode={mode} setMode={setMode} /><Sep />
           <Viewfinder3D fMm={focalMm} N={ap} coc={coc} focusDist={focusDist} width={cW} sceneId={SCENES[sceneIdx]?.id ?? 'geometric'} mode={mode} open={vfOpen} onToggle={toggleViewfinder} />
